@@ -23,6 +23,21 @@ git clone repo-url
 
 ## Making changes
 
+Check status of changes:
+```
+git status
+```
+
+Stage file:
+```
+git add filename
+```
+
+Commit staged changes:
+```
+git commit -m "commit message"
+```
+
 Amend author in last commit:
 ```
 git commit --amend --author="Ben Wells <b.v.wells@gmail.com>"
