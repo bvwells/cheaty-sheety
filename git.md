@@ -38,6 +38,11 @@ Commit staged changes:
 git commit -m "commit message"
 ```
 
+Amend to last commit:
+```
+git commit --amend
+```
+
 Amend author in last commit:
 ```
 git commit --amend --author="Ben Wells <b.v.wells@gmail.com>"
