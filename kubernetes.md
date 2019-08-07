@@ -47,3 +47,10 @@ Create resource defined in yaml:
 ```
 kubectl apply -f kube.yaml
 ```
+
+## Validation
+
+To validate a yaml file:
+```
+kubectl apply --validate=true --dry-run=true --filename=filename.yaml
+```
