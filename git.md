@@ -61,3 +61,16 @@ Make file executable:
 ```
 git update-index --chmod=+x foo.sh
 ```
+
+## Merging commits
+
+Rebase commits:
+```
+git rebase -i HEAD~n
+```
+
+Rebase to first commit:
+```
+git rebase -i --root master
+```
+
