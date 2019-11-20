@@ -74,3 +74,7 @@ Rebase to first commit:
 git rebase -i --root master
 ```
 
+Delete all branches apart from master
+```
+git branch | grep -v "master" | xargs git branch -D 
+```
