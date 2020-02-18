@@ -54,3 +54,37 @@ To validate a yaml file:
 ```
 kubectl apply --validate=true --dry-run=true --filename=filename.yaml
 ```
+
+## Port Forwarding
+
+To port forward to a pod:
+```
+kubectl port-forward pod_name 8080:8080
+```
+or
+```
+kubectl port-forward pods/pod_name 8080:8080
+```
+
+To port forward to a deployment:
+```
+kubectl port-forward deployment_name 8080:8080
+```
+or
+```
+kubectl port-forward deployment/deployment_name 8080:8080
+```
+
+
+To port forward to a service:
+```
+kubectl port-forward svc_name 8080:8080
+```
+or
+```
+kubectl port-forward svc/svc_name 8080:8080
+```
+
+
+
+
