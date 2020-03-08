@@ -78,3 +78,25 @@ Delete all branches apart from master
 ```
 git branch | grep -v "master" | xargs git branch -D 
 ```
+
+## Syncing a fork
+
+List current remotes.
+```
+git remote -v
+```
+
+Specify a new remote upstream repository that will be synced with the fork.
+```
+git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git
+```
+
+Fetch upstream remote branches and commits.
+```
+git fetch upstream
+```
+
+Merge upstream/master commits into local master.
+```
+git merge upstream/master
+```
