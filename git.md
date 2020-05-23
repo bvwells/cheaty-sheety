@@ -96,7 +96,7 @@ Fetch upstream remote branches and commits.
 git fetch upstream
 ```
 
-Merge upstream/master commits into local master.
+Rebase upstream/master commits into local master.
 ```
-git merge upstream/master
+git rebase upstream/master
 ```
