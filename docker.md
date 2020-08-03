@@ -57,5 +57,13 @@ Build an image:
 docker build -t image_name:tag .
 ```
 
+Delete all images
+```
+docker images -a | grep "pattern" | awk "{print $3}" | xargs docker rmi -f
+```
 
+Delete all containers
+```
+docker ps -a | grep "pattern" | awk "{print $2}" | xargs docker rmi -f
+```
 
