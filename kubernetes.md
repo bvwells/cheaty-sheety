@@ -52,7 +52,7 @@ kubectl apply -f kube.yaml
 
 To validate a yaml file:
 ```
-kubectl apply --validate=true --dry-run=true --filename=filename.yaml
+kubectl apply --validate=true --dry-run=client --filename=filename.yaml
 ```
 
 ## Port Forwarding
