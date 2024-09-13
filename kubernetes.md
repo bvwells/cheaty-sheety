@@ -41,6 +41,16 @@ Get yaml for pod in a namespace:
 kubectl get -n namespace pod pod_name -o yaml
 ```
 
+Delete a pod now
+```
+kubectl delete -n namespace pod  pod_name --now
+```
+
+Force delete a pod
+```
+kubectl delete -n namespace pod  pod_name --grace-period=0 --force
+```
+
 ## Creating resouces
 
 Create resource defined in yaml:
